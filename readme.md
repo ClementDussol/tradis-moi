@@ -1,7 +1,6 @@
 # INSTALLATION
 
-Ouvrez votre terminal au repertoire de votre choix
-Clonez ce repertoire git grâce à la commande :
+Ouvrez votre terminal au repertoire de votre choix et clonez ce repertoire git grâce à la commande :
 ```
 git clone https://github.com/ClementDussol/tradis-moi.git
 ```
@@ -35,24 +34,24 @@ Par soucis de test, les réponses sont données dans la console de votre navigat
 
 # FONCTIONNALITES
 
-* base de données : les mots sont stockés sur une base de données en ligne et récupérés dynamiquement à chaque nouveau round
-* difficulté intelligente : à chaque mot est attribué une difficulté (sur une échelle de 1 à 5), si le joueur réussit la difficulté augmente d'un point, elle baisse d'un point si il se trompe
-* historique (bonus) : à la fin de la partie, un récapitulatif de tous les rounds est affiché avec le mot en français et sa traduction ansi que la réponse entrée par le joueur (marquée en rouge si elle était incorrect, en vert si elle était correcte)
+* __base de données__ : les mots sont stockés sur une base de données en ligne et récupérés dynamiquement à chaque nouveau round
+* __difficulté intelligente__ : à chaque mot est attribué une difficulté (sur une échelle de 1 à 5), si le joueur réussit la difficulté augmente d'un point, elle baisse d'un point si il se trompe
+* __historique__ (bonus) : à la fin de la partie, un récapitulatif de tous les rounds est affiché avec le mot en français et sa traduction ansi que la réponse entrée par le joueur (marquée en rouge si elle était incorrect, en vert si elle était correcte)
 
 # TECHNOLOGIES
 
 ### back-end :
 
-* NodeJS (ExpressJS) : gestion de l'application et des routes côté serveur
-* MongoDB et mongoose : gestion de la base de données
-* MLab : base de données hebergée en ligne gratuitement
-* google-translate-api : API de traduction gratuite (non officielle)
-* async : gestion de multiples requêtes asynchrones
+* __NodeJS (ExpressJS)__ : gestion de l'application et des routes côté serveur
+* __MongoDB (mongoose)__ : gestion de la base de données
+* __MLab__ : base de données hebergée en ligne gratuitement
+* __google-translate-api__ : API de traduction gratuite (non officielle)
+* __async__ : gestion de multiples requêtes asynchrones
 
 ### front-end :
 
-* jQuery : gestion du DOM, utilisée principalement pour la gestion de l'interface utilisateur
-* HTML/CSS/JS
+* __jQuery__ : gestion du DOM, utilisée principalement pour la gestion de l'interface utilisateur
+* __HTML/CSS/JS__
 
 # TEMPS ET PROCESSUS
 
@@ -73,9 +72,9 @@ Temps total : **~3 jours**
 
 # DIFFICULTEES RENCONTREES
 
-* Traduction : Certains des mots choisis sont compliqués et ne disposaient pas d'une traduction correcte via l'API. Il a donc fallu vérifier que chaque mot dispose d'une traduction correcte avant des les enregistrer dans la base (jusqu'à ce qu'elle en contienne 500).
+* __Traduction__ : Certains des mots choisis sont compliqués et ne disposaient pas d'une traduction correcte via l'API. Il a donc fallu vérifier que chaque mot dispose d'une traduction correcte avant des les enregistrer dans la base (jusqu'à ce qu'elle en contienne 500).
 
-* Saisie et UX : Pour la gestion des caractères saisis par l'utilisateur, plusieurs options étaient envisageables et présentaient toutes quelques problèmes qu'il a fallu régler.  
+* __Saisie et UX__ : Pour la gestion des caractères saisis par l'utilisateur, plusieurs options étaient envisageables et présentaient toutes quelques problèmes qu'il a fallu régler.  
 
 # AMELIORATIONS
 

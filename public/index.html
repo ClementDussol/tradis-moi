@@ -2,8 +2,60 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<!-- 	<script type="text/javascript" src="js/game.js"></script>
- --></body>
+
+	<div id='container'>
+		
+		<h1 id='title'> tra<span class='bold'>dis-moi </span> </h1>
+		
+	<!-- règles -->
+		<div id='rules'>
+			Tu commences la partie avec <span class='bold'>10 points</span>. <br>
+			À chaque round, un mot est choisi aléatoirement. Tu dois le <span class='bold'>traduire</span> en <span class='bold'>anglais</span>. <br>
+			Si tu réussis, tu <span class='bold'>gagnes</span> un point. Si tu te trompes, tu <span class='bold'>perds</span> un point. <br>
+			Il te faudra <span class='bold'>20 points</span> pour gagner la partie, mais si tu tombes à <span class='bold'>0 points</span>, c'est perdu... 
+		</div>
+		
+	<!-- jouer -->
+		<div id='play'>JOUER !</div>
+		
+	<!-- le jeu -->
+		<div id='game'>
+			<p id='word' class='bold hidden'><i id="loader" class="fa fa-spinner"></i><span class="content"></span></p>
+			<p id='input' class='bold hidden'>
+				<span class="letter">&nbsp;</span>
+				<span class="space"></span>
+			</p>
+			<i class="hidden fa fa-check fa-5x" id="win-icon"></i>
+			<i class="hidden fa fa-close fa-5x" id="loose-icon"></i>
+
+			<p id="score" class="hidden">ton score : <span class="content"></span></p>
+		</div>
+	
+	<p class="result green win hidden"> GAGNÉ ! &#128515; &#128526; </p>
+
+	<p class="result red loose hidden"> PERDU ... &#x1f630; &#x1f622; </p>
+		
+	<!-- historique -->
+		<ul id="history" class="hidden">
+			<h3>TON HISTORIQUE</h3>
+			<li class="names"><span>français</span><span>anglais</span><span>ta réponse</span></li>
+			<li class="entry hidden">
+				<span class="french"></span>
+				<span class="english"></span>
+				<span class="userInput"></span>
+			</li>
+		</ul>
+	
+	</div>
+
+<!-- scripts -->
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/round.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+
+</body>
 </html>

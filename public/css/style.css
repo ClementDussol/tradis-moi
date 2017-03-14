@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono:700|Roboto:300,400,700');
+
+*{
+	font-family: 'Roboto', sans-serif;
+	color: #47102b;
+}
+
+body {
+	background-color: #ffd200;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#loader {
+	animation: spin 2s linear infinite;
+}
+
+#rules {
+	width: 40vw;
+	font-size: 1.5em;
+	margin: 0 auto;
+	text-align: left;
+	line-height: 1.5em;
+	margin-bottom: 32px;
+}
+
+#container {
+	text-align: center;
+	margin-top: 15vh;
+	height: 70vh;
+}
+
+#title, #score {
+	font-size: 4em;
+	font-weight: 300;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.hidden {
+	display: none; 
+}
+
+#play {
+	width: 20vw;
+	margin: 0 auto;
+}
+
+#word {
+	width: 30vw;
+	margin: 0 auto;
+}
+
+#word, #input .letter, #play, .result {
+
+	background-color: white;
+	font-weight: bold;
+	font-size: 4em;
+	border-radius: 8px;
+	box-shadow: 8px 8px #cc8b56;
+}
+
+#input {
+	margin-top: 5vh;
+}
+
+#input .letter, #input .space {
+	font-family: 'Droid Sans Mono', monospace;
+	display: inline-block;
+	padding: 0.2em 0.3em;
+	margin: 0 0.1em;
+	width: 2vw;
+}
+
+#loose-icon {
+	color : #ea2e56;
+}
+
+#win-icon {
+	color:  #1da68e;
+}
+
+#history {
+	list-style: none;
+	width: 60vw;
+	margin: 0 auto;
+	margin-bottom: 96px;
+}
+
+#history h3 {
+	font-size: 2em;
+}
+
+#history .names, #history .userInput {
+	font-weight: bold;
+}
+
+#history .names {
+	font-size: 1.2em;
+}
+
+.entry {
+	width: 100%;
+	border-bottom: 2px solid #47102b;
+}
+
+.entry span, #history span {
+	display: inline-block;
+	width: 33%;
+	text-align: left;
+	padding: 8px 0;
+	font-size: 1.5em;
+}
+
+.red {
+	color : #ea2e56;
+}
+
+.green {
+	color:  #1da68e;
+}
+
+.result{
+	font-size: 3em;
+	font-weight: bold;
+	padding: 0.5em;
+	width: 30vw;
+	margin: 0 auto;
+	margin-bottom: 32px;
+}

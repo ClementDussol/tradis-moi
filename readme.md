@@ -85,6 +85,8 @@ Temps total : **~3 jours**
 * Améliorer les feedbacks (un peu plus de pep's lors des interractions)
 * Ajout d'un timer pour chaque round et calcul du score final (en fonction du temps passé sur chaque round et du nombre total du round)
 * Utilisation d'une API de traduction plus fiable telles que Google Translate ou Bing Translate (payantes)
+* Ajout d'un bouton "Rejouer" une fois la partie terminée
+
 
 ### workflow & boilerplate (en situation de production) :
 
